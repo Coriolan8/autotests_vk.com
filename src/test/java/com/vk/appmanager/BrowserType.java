@@ -7,5 +7,4 @@ package com.vk.appmanager;
 public enum BrowserType {
   FIREFOX,
   CHROME,
-  IE
 }

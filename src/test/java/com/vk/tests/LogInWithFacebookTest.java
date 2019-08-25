@@ -5,12 +5,11 @@ import org.testng.annotations.Test;
 /**
  * Created by Yulia on 22.08.2019.
  */
-public class LogInWithFacebookTest extends TestBase{
+public class LogInWithFacebookTest extends TestBase {
 
   @Test
   public void testFacebookLogin() {
-    app.getUserHelper().loginFacebook("email","pass");
+    app.getUserHelper().loginFacebook("email", "pass");
+    app.getNavigationHelper().checkUrlSite("https://vk.com/join?act=fb_start");
   }
-
-
 }

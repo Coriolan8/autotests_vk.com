@@ -15,9 +15,10 @@ public class TestBase {
 
   @BeforeMethod
   public void setUp() throws Exception {
-    app.init(BrowserType.FIREFOX);
+    app.init(BrowserType.CHROME);
     app.getNavigationHelper().goToMainPage();
-    app.getUserHelper().inEnglish();}
+    app.getUserHelper().inEnglish();
+  }
 
 
   @AfterMethod

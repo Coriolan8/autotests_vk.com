@@ -3,7 +3,6 @@ package com.vk.appmanager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
   WebDriver wd;
 
-  private  NavigationHelper navigationHelper;
-  private  UserHelper userHelper;
+  private NavigationHelper navigationHelper;
+  private UserHelper userHelper;
 
 
   public void init(BrowserType browserType) {
@@ -42,6 +41,7 @@ public class ApplicationManager {
   public UserHelper getUserHelper() {
     return userHelper;
   }
+
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;
   }

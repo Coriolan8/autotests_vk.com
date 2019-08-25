@@ -13,15 +13,6 @@ public class HelperTest {
     this.wd = wd;
   }
 
-  protected void choiceValue(By locator, String data) {
-    click(locator);
-    wd.findElement(locator).getCssValue(data);
-  }
-
-  protected void choiceName(By locator, String data) {
-    click(locator);
-    wd.findElement(locator).sendKeys(data);
-  }
 
   protected void click(By locator) {
     wd.findElement(locator).click();

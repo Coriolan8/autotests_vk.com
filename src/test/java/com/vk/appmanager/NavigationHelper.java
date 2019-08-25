@@ -5,42 +5,47 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 
-
 /**
  * Created by Yulia on 21.08.2019.
  */
-public class NavigationHelper extends HelperTest{
+public class NavigationHelper extends HelperTest {
 
   public NavigationHelper(WebDriver wd) {
     super(wd);
   }
 
   public void goToMainPage() {
-   wd.get("https://vk.com");
+    wd.get("https://vk.com");
   }
 
   public void checkTitelPage(String text) {
     try {
       Thread.sleep(3000);
     } catch (InterruptedException e) {
-      e.printStackTrace();    }
+      e.printStackTrace();
+    }
     String title = wd.getTitle();
-    Assert.assertTrue(title.contains(text));
+    Assert.assertTrue(title.contains(text) || title.contains("VK — social network and calls")
+            || title.contains("App" + (char) 160 + "Store: VK — общение, музыка и видео"));
   }
 
   public void goToPage(String link) {
     wd.get(link);
   }
+
   public void goToLanguagesPage() {
     click(By.linkText("all languages »"));
   }
+
 
   public void checkUrlSite(String text) {
     try {
       Thread.sleep(3000);
     } catch (InterruptedException e) {
-      e.printStackTrace();    }
+      e.printStackTrace();
+    }
     String url = wd.getCurrentUrl();
     Assert.assertTrue(url.contains(text));
   }
+
 }

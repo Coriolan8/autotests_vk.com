@@ -9,19 +9,25 @@ public class TheFooterLinksTest extends TestBase {
 
   @Test
   public void testTheVkLink() {
-    app.getNavigationHelper().goToPage( "https://vk.com/about");
-    app.getNavigationHelper().checkTitelPage("Company Info | VK");}
+    app.getNavigationHelper().goToPage("https://vk.com/about");
+    app.getNavigationHelper().checkTitelPage("Company Info | VK");
+  }
+
   @Test
   public void testTheAboutLink() {
     app.getNavigationHelper().goToPage("https://vk.com/about");
-    app.getNavigationHelper().checkTitelPage("Company Info | VK");}
+    app.getNavigationHelper().checkTitelPage("Company Info | VK");
+  }
+
   @Test
   public void testTheTermsLink() {
     app.getNavigationHelper().goToPage("https://vk.com/terms");
-    app.getNavigationHelper().checkTitelPage("Terms of Service | VK");}
+    app.getNavigationHelper().checkTitelPage("Terms of Service | VK");
+  }
 
-    @Test
+  @Test
   public void testTheDevelopersLink() {
     app.getNavigationHelper().goToPage("https://vk.com/dev");
-    app.getNavigationHelper().checkTitelPage("Developers | VK");}
+    app.getNavigationHelper().checkTitelPage("Developers | VK");
+  }
 }

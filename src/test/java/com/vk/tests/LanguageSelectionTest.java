@@ -16,5 +16,5 @@ public class LanguageSelectionTest extends TestBase {
     app.getUserHelper().choiceLang("Удмурт");
     app.getNavigationHelper().checkTitelPage("Гажаса ӧтиськом");
     app.getUserHelper().inEnglish();
-}
+  }
 }

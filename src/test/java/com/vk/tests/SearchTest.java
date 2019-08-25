@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Yulia on 22.08.2019.
  */
-public class SearchTest extends TestBase  {
+public class SearchTest extends TestBase {
 
   @Test
   public void testTheSearch() {

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Yulia on 21.08.2019.
  */
-public class LogInTest extends TestBase{
+public class LogInTest extends TestBase {
 
   @Test
   public void testLogIn() {
