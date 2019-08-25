@@ -11,7 +11,7 @@ public class AppButtonsTest extends TestBase {
   @Test
   public void testAndroidApp() {
     app.getNavigationHelper().goToPage("https://play.google.com/store/apps/details?id=com.vkontakte.android");
-    app.getNavigationHelper().checkTitelPage("Приложения в Google Play" + "ВКонтакте");
+    app.getNavigationHelper().checkTitelPage("Приложения в Google Play – ВКонтакте — социальная сеть");
 
   }
 
